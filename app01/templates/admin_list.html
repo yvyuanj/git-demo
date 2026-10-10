@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>管理员列表</title>
+</head>
+<body>
+    <h1>管理员信息表</h1>
+    <p><a href="/admin_add/">新增管理员</a></p>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>ID</th>
+            <th>用户名</th>
+            <th>密码</th>
+            <th>手机号</th>
+            <th>操作</th>
+        </tr>
+        {% for item in data_list %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.username }}</td>
+            <td>{{ item.password }}</td>
+            <td>{{ item.mobile }}</td>
+            <td>
+                <a href="/admin_delete/?id={{ item.id }}">删除</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
