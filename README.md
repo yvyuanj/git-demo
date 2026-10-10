@@ -1,6 +1,27 @@
 # git-demo — Django 初学项目
 
 一个用于学习 Django 的入门 Web 项目（作业练习），包含用户管理、管理员增删改查、登录验证、天气查询、ORM 增删改查、模板渲染等功能示例。
+# git-demo
+
+## 使用技术
+- 编程语言：Python3
+- Web框架：Django
+- 前端：HTML、Bootstrap、JavaScript
+- 数据库：SQLite3
+
+## 功能模块
+1. 用户信息管理：实现用户的新增、查询、修改、删除
+2. ORM数据库操作：使用Django ORM完成数据表增删改查演示
+3. 用户登录验证：账号密码校验，登录状态保存
+4. 模板渲染：Django模板继承，动态数据渲染到HTML页面
+5. 天气查询页面：简易页面展示示例
+6. Admin后台管理：Django自带后台，可视化管理数据
+
+## 数据模型
+- UserInfo 用户表：存储用户名、账号、所属部门、角色等信息
+- Department 部门表：保存部门名称信息
+- Role 角色表：定义用户角色类型，区分权限
+
 
 ## 技术栈
 
@@ -26,6 +47,19 @@ site2/
     ├── static/        # 静态资源（CSS / JS / Bootstrap）
     └── migrations/    # 数据库迁移
 ```
+
+## 环境准备
+### 1. 环境要求
+Python >=3.8，安装Django框架
+
+### 2. 克隆项目
+```bash
+git clone https://github.com/yvyuanj/git-demo.git
+cd git-demo
+创建虚拟环境：
+python -m venv venv
+# Windows激活虚拟环境
+venv\Scripts\activate
 
 ## 功能模块
 
